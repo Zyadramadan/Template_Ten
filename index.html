@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Files -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Template 10</title>
+  </head>
+  <body>
+    <!-- Start Header And Hero Box -->
+    <div class="hh-container">
+      <!-- Start Header -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <nav>
+            <i class="fa fa-bars"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#newsletter">Newsletter</a></li>
+              <li>
+                <button>
+                  <i class="fa-solid fa-right-to-bracket"></i>Sign Up
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <script>
+          const icon = document.querySelector("nav i.fa-bars");
+
+          const list = document.querySelector("nav ul");
+
+          icon.addEventListener("click", function () {
+            if (list.style.display === "none" || list.style.display === "") {
+              list.style.display = "flex";
+            } else {
+              list.style.display = "none";
+            }
+          });
+          // Get the header element
+          const header = document.querySelector("header");
+
+          // Add an event listener to the scroll event
+          window.addEventListener("scroll", () => {
+            // Check if the user has scrolled beyond a certain threshold (e.g., 100 pixels)
+            if (window.scrollY > 100) {
+              // Add a CSS class to the header element
+              header.classList.add("scrolled");
+            } else {
+              // Remove the CSS class from the header element
+              header.classList.remove("scrolled");
+            }
+          });
+        </script>
+      </header>
+      <!-- End Header -->
+      <!-- Start Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="text">
+            <h1>Get The Latest App From App Stores</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium veniam quam minima, fugiat, quidem nemo nobis
+              distinctio cum quaerat
+            </p>
+            <button>Free Quote<i class="fa-brands fa-app-store"></i></button>
+            <button>Free Quote<i class="fa-brands fa-google-play"></i></button>
+          </div>
+          <div class="image">
+            <img src="images/slider-dec.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header And Hero Box -->
+    <!-- Start Services -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="heading">
+          <h1>Amazing <span>Services & Features</span> For You</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+            aliquid voluptatum perferendis eius eos debitis culpa? Sit eum,
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="image"></div>
+            <h2>App Maintenance</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, possimus quibusdam. Corporis eum facilis quas dolorum
+            </p>
+            <button>Read More<i class="fa fa-arrow-right"></i></button>
+          </div>
+          <div class="card">
+            <div class="image"></div>
+            <h2>Rocket Speed of App</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, possimus quibusdam. Corporis eum facilis quas dolorum
+            </p>
+            <button>Read More<i class="fa fa-arrow-right"></i></button>
+          </div>
+          <div class="card">
+            <div class="image"></div>
+            <h2>Multi Workflow Idea</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, possimus quibusdam. Corporis eum facilis quas dolorum
+            </p>
+            <button>Read More<i class="fa fa-arrow-right"></i></button>
+          </div>
+          <div class="card">
+            <div class="image"></div>
+            <h2>24/7 Help & Support</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, possimus quibusdam. Corporis eum facilis quas dolorum
+            </p>
+            <button>Read More<i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+    <!-- Start About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="text">
+          <div class="heading">
+            <h1>About <span>What We Do </span>& Who We Are</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eismod tempor incididunt ut labore et dolore magna.
+            </p>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <h2>Maintance Problems</h2>
+              <h4>Lorem Ipsum Text</h4>
+            </div>
+            <div class="card">
+              <h2>24/7 Support & Help</h2>
+              <h4>Lorem Ipsum Text</h4>
+            </div>
+            <div class="card">
+              <h2>Fixing Issues About</h2>
+              <h4>Lorem Ipsum Text</h4>
+            </div>
+            <div class="card">
+              <h2>Co. Development</h2>
+              <h4>Lorem Ipsum Text</h4>
+            </div>
+          </div>
+          <div class="heading">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eismod tempor idunte ut labore et dolore adipiscing magna.
+            </p>
+          </div>
+          <button>Start 14-Days Free Trailer</button>
+          <h4>*No Credit Card Required</h4>
+        </div>
+        <div class="image">
+          <img src="images/about-right-dec.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+    <!-- Start Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="heading">
+          <h1>Check What <span>The Clients Say</span> About Our App Dev</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eismod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div class="person">
+          <div class="data">
+            <div class="image">
+              <img src="images/man-1.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h2>David Martino</h2>
+              <h4>CEO of David Company</h4>
+              <h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                4.8
+              </h3>
+            </div>
+          </div>
+          <div class="message">
+            <img src="images/quote.png" alt="" />
+            <q>
+              Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do
+              eismod tempor idunte ut labore et dolore magna aliqua darwin
+              kengan lorem ipsum dolor sit amet, consectetur picing elit massive
+              big blasta.
+            </q>
+          </div>
+        </div>
+        <div class="person">
+          <div class="data">
+            <div class="image">
+              <img src="images/man-2.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h2>Jake Harris</h2>
+              <h4>CEO of David Company</h4>
+              <h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                4.5
+              </h3>
+            </div>
+          </div>
+          <div class="message">
+            <img src="images/quote.png" alt="" />
+            <q>
+              Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do
+              eismod tempor idunte ut labore et dolore magna aliqua darwin
+              kengan lorem ipsum dolor sit amet, consectetur picing elit massive
+              big blasta.
+            </q>
+          </div>
+        </div>
+        <div class="person">
+          <div class="data">
+            <div class="image">
+              <img src="images/woman-1.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h2>May Catherina</h2>
+              <h4>CEO of David Company</h4>
+              <h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                4.7
+              </h3>
+            </div>
+          </div>
+          <div class="message">
+            <img src="images/quote.png" alt="" />
+            <q>
+              Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do
+              eismod tempor idunte ut labore et dolore magna aliqua darwin
+              kengan lorem ipsum dolor sit amet, consectetur picing elit massive
+              big blasta.
+            </q>
+          </div>
+        </div>
+        <div class="person">
+          <div class="data">
+            <div class="image">
+              <img src="images/man-4.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h2>Messi</h2>
+              <h4>CEO of David Company</h4>
+              <h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                3.9
+              </h3>
+            </div>
+          </div>
+          <div class="message">
+            <img src="images/quote.png" alt="" />
+            <q>
+              Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do
+              eismod tempor idunte ut labore et dolore magna aliqua darwin
+              kengan lorem ipsum dolor sit amet, consectetur picing elit massive
+              big blasta.
+            </q>
+          </div>
+        </div>
+        <div class="person">
+          <div class="data">
+            <div class="image">
+              <img src="images/man-3.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h2>Ronaldo</h2>
+              <h4>CEO of David Company</h4>
+              <h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                4.3
+              </h3>
+            </div>
+          </div>
+          <div class="message">
+            <img src="images/quote.png" alt="" />
+            <q>
+              Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do
+              eismod tempor idunte ut labore et dolore magna aliqua darwin
+              kengan lorem ipsum dolor sit amet, consectetur picing elit massive
+              big blasta.
+            </q>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials -->
+    <!-- Start Prices -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="heading">
+          <h1>We Have The Best Pre-Order <span>Prices</span> You Can Get</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eismod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="price">
+              <h1>$12</h1>
+            </div>
+            <h2>Standard Plan App</h2>
+            <img src="images/pricing-table-01.png" alt="" />
+            <h4>Lorem Ipsum Dolores</h4>
+            <h4>20 TB of Storage</h4>
+            <h4><del>Life-time Support</del></h4>
+            <h4><del>Premium Add-Ons</del></h4>
+            <h4><del>Fastest Network</del></h4>
+            <h4><del>More Options </del></h4>
+            <button>Purchase This Plan</button>
+          </div>
+          <div class="card active">
+            <div class="price">
+              <h1>$25</h1>
+            </div>
+            <h2>Business Plan App</h2>
+            <img src="images/pricing-table-01.png" alt="" />
+            <h4>Lorem Ipsum Dolores</h4>
+            <h4>20 TB of Storage</h4>
+            <h4><del>Life-time Support</del></h4>
+            <h4><del>Premium Add-Ons</del></h4>
+            <h4><del>Fastest Network</del></h4>
+            <h4><del>More Options </del></h4>
+            <button>Purchase This Plan</button>
+          </div>
+          <div class="card">
+            <div class="price">
+              <h1>$66</h1>
+            </div>
+            <h2>Premium Plan App</h2>
+            <img src="images/pricing-table-01.png" alt="" />
+            <h4>Lorem Ipsum Dolores</h4>
+            <h4>20 TB of Storage</h4>
+            <h4><del>Life-time Support</del></h4>
+            <h4><del>Premium Add-Ons</del></h4>
+            <h4><del>Fastest Network</del></h4>
+            <h4><del>More Options </del></h4>
+            <button>Purchase This Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Prices -->
+    <!-- Start Newsletter -->
+    <section class="newsletter" id="newsletter">
+      <div class="container">
+        <h1>Join Our Mailing List To Receive The News & Latest Trends</h1>
+        <div class="input">
+          <input type="email" placeholder="Email Adress.." />
+          <button>Subscribt Now <i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div class="box">
+          <div class="contact-us part">
+            <h2>Contact Us</h2>
+            <h4>Rio de Janeiro - RJ, 22795-008, Brazil</h4>
+            <h4>010-020-0340</h4>
+            <h4>info@company.co</h4>
+          </div>
+          <div class="about-us part">
+            <h2>About Us</h2>
+            <h4>Home</h4>
+            <h4>About</h4>
+            <h4>Services</h4>
+            <h4>Testimonials</h4>
+            <h4>Pricing</h4>
+          </div>
+          <div class="links part">
+            <h2>Useful Links</h2>
+            <h4>Free Apps</h4>
+            <h4>App Engine</h4>
+            <h4>Programming</h4>
+            <h4>Development</h4>
+            <h4>App News</h4>
+          </div>
+          <div class="company part">
+            <h2>About Our Company</h2>
+            <img src="images/white-logo.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+          </div>
+        </div>
+        <h3>
+          Copyright © 2022 Chain App Dev Company. All Rights Reserved. Design:
+          Zyad_Ramadan
+        </h3>
+      </div>
+    </section>
+    <!-- End Newsletter -->
+  </body>
+</html>
